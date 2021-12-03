@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APi Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+</head>
+
+<body>
+    <header class="d-flex">
+        <div class="logo">
+            API
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+
+        <div class="cart d-flex-1">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span id="cart-value">0</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="rows" id="show-data">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="a3.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="price_name d-flex">
+                            <p>Name</p>
+                            <p>Price</p>
+                        </div>
+                        <div class="btn d-flex">
+                            <button class="btn1" id="add_cart">Add to Cart</button>
+                            <button class="btn1">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
