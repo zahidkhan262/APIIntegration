@@ -85,6 +85,9 @@ button,input{
     padding: 10px;
     border-top: 1px solid rgb(207, 206, 206);
 }
+.price_name p{
+    text-justify: auto;
+}
 .btn{
     margin-top: 10px;
     transition: 0.3s;
