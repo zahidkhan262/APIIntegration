@@ -1,6 +1,10 @@
 var showData = document.getElementById('show-data');
 
 async function call() {
+
+    // by XMLHttpRequest fetching api 👎
+
+
     // var http = new XMLHttpRequest();
     // http.open("GET", "https://jsonplaceholder.typicode.com/photos")
     // http.send();
@@ -9,6 +13,8 @@ async function call() {
     //         var data = JSON.parse(this.responseText)
 
     // by async await fetching api
+
+
     let resp = await fetch("https://jsonplaceholder.typicode.com/photos")
     let data = await resp.json();
     console.log(data);
