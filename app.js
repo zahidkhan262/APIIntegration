@@ -1,17 +1,22 @@
 var showData = document.getElementById('show-data');
 
-function call() {
-    var http = new XMLHttpRequest();
-    http.open("GET", "https://jsonplaceholder.typicode.com/photos")
-    http.send();
-    http.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse(this.responseText)
-            console.log(data)
-            mycard = ""
+async function call() {
+    // var http = new XMLHttpRequest();
+    // http.open("GET", "https://jsonplaceholder.typicode.com/photos")
+    // http.send();
+    // http.onreadystatechange = function () {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //         var data = JSON.parse(this.responseText)
 
-            data.map((item) => {
-                mycard += `
+    // by async await fetching api
+    let resp = await fetch("https://jsonplaceholder.typicode.com/photos")
+    let data = await resp.json();
+    console.log(data);
+
+    mycard = ""
+
+    data.map((item) => {
+        mycard += `
                 <div class="col-3">
                 <div class="card">
                     <div class="card-img">
@@ -29,10 +34,9 @@ function call() {
                 </div>
             </div>
                 `
-            })
+    })
 
-            showData.innerHTML = mycard;
-        }
-    }
+    showData.innerHTML = mycard;
+
 }
 call()
