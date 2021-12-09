@@ -1,23 +1,42 @@
 var showData = document.getElementById('show-data');
 
+
+// function call() {
+// by XMLHttpRequest fetching api 👎
+
+
+// var http = new XMLHttpRequest();
+// http.open("GET", "https://jsonplaceholder.typicode.com/photos")
+// http.send();
+// http.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var data = JSON.parse(this.responseText)
+
+// by async await fetching api
+
 async function call() {
-
-    // by XMLHttpRequest fetching api 👎
-
-
-    // var http = new XMLHttpRequest();
-    // http.open("GET", "https://jsonplaceholder.typicode.com/photos")
-    // http.send();
-    // http.onreadystatechange = function () {
-    //     if (this.readyState == 4 && this.status == 200) {
-    //         var data = JSON.parse(this.responseText)
-
-    // by async await fetching api
-
-
     let resp = await fetch("https://jsonplaceholder.typicode.com/photos")
     let data = await resp.json();
     console.log(data);
+
+
+    // by jquery with promises api
+    // const promisesList = new Promise((resolve, rej) => {
+
+    //     $.get("https://jsonplaceholder.typicode.com/photos", (data) => {
+
+    //         // console.log(data);
+    //         resolve(data)
+    //     }).fail(err => {
+    //         rej(new Error("some error occur", err.status))
+    //     })
+    // })
+
+    // promisesList.then((data) => {
+    //     console.log("response succes=>", data);
+    // }).catch((error) => {
+    //     console.log("throw error", error);
+    // })
 
     mycard = ""
 
