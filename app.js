@@ -39,7 +39,7 @@ async function call() {
     // })
 
     mycard = ""
-
+if(data.length){
     data.map((item) => {
         mycard += `
                 <div class="col-3">
@@ -60,8 +60,12 @@ async function call() {
             </div>
                 `
     })
+     showData.innerHTML = mycard;
+}else{
+    showData.innerHTML="Loading Data"
+}
 
-    showData.innerHTML = mycard;
+   
 
 }
 call()
