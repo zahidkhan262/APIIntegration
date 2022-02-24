@@ -39,7 +39,7 @@ async function call() {
     // })
 
     mycard = ""
-if(data.length){
+if(data){
     data.map((item) => {
         mycard += `
                 <div class="col-3">
