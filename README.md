@@ -1,6 +1,5 @@
 # APIIntegration
-//gitKraken
-eJwtzMGKwjAUheF3ybqLtmpqsxwGQRHcuJnZhCS9qaFpb7xJ7Yj47hOku8OB738xZQzEeMUBJibYtmxrw63SwKumgka1mpuSt52CPbfW7sptnUHFChYIH64DWulrLcm0pvobyh8Xvn43yymQ25wvLtXfh2Y+7hOOJ0Jdtff+dsypD5HpGSA7DYqA8hsNfg7VjW4SYdbeGTnAsyBQnUDq8whYzBFIwKicLxakwXpcMoa/4AiiVImJafb+/f4HCB1RMA==
+
 api integration through ajax XMLHttprequest
 
 https://zahidkhan262.github.io/APIIntegration/
