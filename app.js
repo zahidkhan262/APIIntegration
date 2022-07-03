@@ -12,8 +12,16 @@ var showData = document.getElementById('show-data');
 //     if (this.readyState == 4 && this.status == 200) {
 //         var data = JSON.parse(this.responseText)
 
-// by async await fetching api
+// var http = new XMLHttpRequest();
 
+// http.open("GET", "url");
+// http.send();
+// http.onreadystatechange = ()=>{
+//     if(this.readyState === 4 && this.status === 200){
+//         var getData = JSON.parse(this.responseText)
+//         }
+
+// // by async await fetching api
 async function call() {
     let resp = await fetch("https://jsonplaceholder.typicode.com/photos")
     let data = await resp.json();
