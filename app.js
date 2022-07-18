@@ -29,8 +29,14 @@ async function call() {
 
 
     // by jquery with promises api
-    // const promisesList = new Promise((resolve, rej) => {
-
+    // const promisesList = new Promise((res, rej) => {
+$.get("url", function(data){
+res(data)
+}).fail(function(err){
+rej(new Error("something went wrong, err.status"))
+})
+  
+        
     //     $.get("https://jsonplaceholder.typicode.com/photos", (data) => {
 
     //         // console.log(data);
