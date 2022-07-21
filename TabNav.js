@@ -26,3 +26,4 @@ class TabNav extends Component {
     }
 }
 export default TabNav;
+//another ref//https://www.digitalocean.com/community/tutorials/react-tabs-component
